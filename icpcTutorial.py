@@ -24,23 +24,12 @@ def one(n):
             39916800,
             479001600,
             6227020800,
-            87178291200,
-            1307674368000,
-            20922789888000,
-            355687428096000,
-            6402373705728000,
-            121645100408832000,
-            2432902008176640000,
-            51090942171709440000,
-            1124000727777607680000,
-            25852016738884976640000,
-            620448401733239439360000,
         ]
-    if(n <= 24):
+    if(n <= 13):
         return factorials[n]
     else:
-        # way past max m of 10^9 at this point
-        return factorials[24] 
+        # factorial(13) goes past max m of 10^9 
+        return factorials[13] 
 def two(n):
     return math.pow(2, n) 
 def three(n):
